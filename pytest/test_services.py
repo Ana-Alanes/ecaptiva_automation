@@ -3,5 +3,5 @@ import pytest
 
 
 def test_tab_services(page: Page):
-    page.goto("https://captivasoft.net")
+    page.goto("http://192.168.1.52:5173/")
     assert page.inner_text('//*[@id="my-header"]/div[2]/div[2]/nav/ul/li[2]/a') == "SERVICES"
