@@ -10,7 +10,6 @@ async def main():
         await page.set_viewport_size({"width": 1800, "height": 1200})
         await page.goto("http://192.168.1.115:5173/")
 
-        # Hacer clic en el enlace en lugar de intentar marcarlo
         await page.click('//*[@id="my-header"]/div[2]/div[2]/nav/ul/li[1]/a')
         await page.screenshot(path="screenshots/company.png")
 

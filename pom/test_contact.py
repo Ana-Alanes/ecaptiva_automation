@@ -7,7 +7,7 @@ with sync_playwright() as p:
     search_page = searchPage(page)
 
     search_page.navigate()
-    search_page.search("JuanPerez", "juan@example.com", "60776212", "Test", "test")
+    search_page.search("JuanPerez", "juanmail.com", "60776212", "Test", "test")
 
     page.screenshot(path="contact.png")
     print(page.title())
